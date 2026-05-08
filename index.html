@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Task Manager</h1>
+
+  <div class="auth">
+    <input type="text" id="username" placeholder="Username">
+
+    <input type="email" id="email" placeholder="Email">
+
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="register()">Register</button>
+
+    <button onclick="login()">Login</button>
+  </div>
+
+  <hr>
+
+  <div class="task-section">
+
+    <input type="text" id="title" placeholder="Task Title">
+
+    <input type="text" id="description" placeholder="Task Description">
+
+    <button onclick="addTask()">Add Task</button>
+
+    <div id="tasks"></div>
+
+  </div>
+
+</div>
+
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+
+<script src="app.js"></script>
+
+</body>
+</html>
